@@ -1,0 +1,106 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="544" viewBox="0 0 1086 544" role="img" aria-labelledby="svgTitle svgDesc">
+  <title id="svgTitle">研究流程图（中文翻译）</title>
+  <desc id="svgDesc">提出并登记、预测并排序、运行并评估三个阶段的研究流程图。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#929a9e"/>
+    </marker>
+    <style>
+      .stage { font: 700 20px "Noto Sans Mono CJK SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",monospace; fill: #212a2f; }
+      .step { fill: #2c796f; }
+      .head { font: 700 19px "Noto Sans Mono CJK SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",monospace; fill: #212a2f; }
+      .body { font: 400 18px "Noto Sans Mono CJK SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",monospace; fill: #677278; }
+      .action { font: 700 19px "Noto Sans Mono CJK SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",monospace; fill: #2c796f; }
+      .connector { fill: none; stroke: #929a9e; stroke-width: 1.8; stroke-linecap: square; stroke-linejoin: miter; }
+      .box { rx: 5; ry: 5; }
+    </style>
+  </defs>
+
+  <rect width="1086" height="544" fill="#ffffff"/>
+
+  <!-- 阶段标题 -->
+  <text class="stage" x="28" y="26"><tspan class="step">1</tspan><tspan dx="10">提出并登记</tspan></text>
+  <text class="stage" x="361" y="26"><tspan class="step">2</tspan><tspan dx="10">预测并排序</tspan></text>
+  <text class="stage" x="718" y="26"><tspan class="step">3</tspan><tspan dx="10">运行并评估</tspan></text>
+
+  <!-- 流程连接线 -->
+  <g class="connector">
+    <path d="M178 153 V171" marker-end="url(#arrow)"/>
+    <path d="M178 273 V292" marker-end="url(#arrow)"/>
+
+    <path d="M329 341 H341 V53 H402"/>
+    <path d="M646 53 H894 V76" marker-end="url(#arrow)"/>
+    <path d="M341 127 H361" marker-end="url(#arrow)"/>
+    <path d="M341 304 H361" marker-end="url(#arrow)"/>
+
+    <path d="M28 341 H15 V493 H28" marker-end="url(#arrow)"/>
+
+    <path d="M686 127 H702 V493"/>
+    <path d="M702 341 H718" marker-end="url(#arrow)"/>
+    <path d="M702 493 H718" marker-end="url(#arrow)"/>
+
+    <path d="M893 178 V196" marker-end="url(#arrow)"/>
+    <path d="M893 273 V292" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- 阶段一：提出并登记 -->
+  <rect class="box" x="28" y="76" width="301" height="77" fill="#e3eef4"/>
+  <text class="head" x="178.5" y="105" text-anchor="middle">种子论文</text>
+  <text class="body" x="178.5" y="137" text-anchor="middle">文本、图表、代码</text>
+
+  <rect class="box" x="28" y="171" width="301" height="102" fill="#e3eef4"/>
+  <text class="head" x="178.5" y="200" text-anchor="middle">研究智能体</text>
+  <text class="body" x="178.5" y="224" text-anchor="middle">单个研究者</text>
+  <text class="body" x="178.5" y="249" text-anchor="middle">或研究团队</text>
+
+  <rect class="box" x="28" y="292" width="301" height="99" fill="#e3eef4"/>
+  <text class="head" x="178.5" y="321" text-anchor="middle">五项已登记 MVE</text>
+  <text class="body" x="178.5" y="345" text-anchor="middle">假设 +</text>
+  <text class="body" x="178.5" y="369" text-anchor="middle">已登记事件</text>
+
+  <text class="action" x="178.5" y="425" text-anchor="middle">提交实验</text>
+  <path d="M28 437 H329" class="connector"/>
+
+  <!-- 阶段二：预测并排序 -->
+  <text class="body" x="525" y="61" text-anchor="middle" font-weight="700">MVE 登记</text>
+
+  <rect class="box" x="361" y="76" width="325" height="102" fill="#eee8f4"/>
+  <text class="head" x="523.5" y="105" text-anchor="middle">提案智能体</text>
+  <text class="body" x="523.5" y="137" text-anchor="middle">自身研究背景</text>
+  <text class="body" x="523.5" y="160" text-anchor="middle">预测 + 排序</text>
+
+  <rect class="box" x="361" y="241" width="325" height="127" fill="#eee8f4"/>
+  <text class="head" x="523.5" y="270" text-anchor="middle">六位评审</text>
+  <text class="body" x="523.5" y="294" text-anchor="middle">仅看论文和</text>
+  <text class="body" x="523.5" y="317" text-anchor="middle">登记信息</text>
+  <text class="body" x="523.5" y="340" text-anchor="middle">其中一位与提案模型相同</text>
+
+  <text class="action" x="523.5" y="401" text-anchor="middle">提交预测</text>
+  <text class="action" x="523.5" y="425" text-anchor="middle">和排名</text>
+  <path d="M361 437 H686" class="connector"/>
+
+  <!-- 阶段三：运行并评估 -->
+  <rect class="box" x="718" y="76" width="350" height="102" fill="#f1f2f4"/>
+  <text class="head" x="893" y="105" text-anchor="middle">运行全部五项 MVE</text>
+  <text class="body" x="893" y="137" text-anchor="middle">独立执行者</text>
+  <text class="body" x="893" y="160" text-anchor="middle">相同限制</text>
+
+  <rect class="box" x="718" y="196" width="350" height="77" fill="#f1f2f4"/>
+  <text class="head" x="893" y="225" text-anchor="middle">已登记事件结果</text>
+  <text class="body" x="893" y="256" text-anchor="middle">是否发生</text>
+
+  <rect class="box" x="718" y="292" width="350" height="99" fill="#f7e5db"/>
+  <text class="head" x="893" y="321" text-anchor="middle">审计与价值排序</text>
+  <text class="body" x="893" y="345" text-anchor="middle">忠实且有效</text>
+  <text class="body" x="893" y="369" text-anchor="middle">研究价值</text>
+
+  <rect class="box" x="718" y="455" width="350" height="76" fill="#f7e5db"/>
+  <text class="head" x="893" y="484" text-anchor="middle">评审</text>
+  <text class="body" x="893" y="507" text-anchor="middle">构想与证据</text>
+
+  <!-- 新颖性与后续研究 -->
+  <rect class="box" x="28" y="455" width="658" height="76" fill="#e4eee5"/>
+  <text class="head" x="357" y="484" text-anchor="middle">新颖性 + 显而易见的后续</text>
+  <text class="body" x="357" y="507" text-anchor="middle">检索既有研究 + 仅依据论文列出后续方向</text>
+</svg>

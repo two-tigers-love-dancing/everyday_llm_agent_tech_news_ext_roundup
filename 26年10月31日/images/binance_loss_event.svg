@@ -1,0 +1,211 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1120" viewBox="0 0 1120 1120" role="img" aria-labelledby="title desc">
+  <title id="title">币安黑客事件：帖子配图中的资金转移时间线</title>
+  <desc id="desc">根据2026年10月30日帖子配图绘制。10月29日20:05 UTC开始跨十条链转移资金，大部分转移约二十分钟完成，总额约63.6亿美元。约27亿美元被冻结，攻击者持有约24亿美元的ETH和BTC。</desc>
+
+  <defs>
+    <style>
+      text {
+        font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+        fill: #292a28;
+      }
+      .ink {
+        fill: none;
+        stroke: #343632;
+        stroke-width: 2.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .ghost {
+        fill: none;
+        stroke: #343632;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+        opacity: .22;
+      }
+      .muted { fill: #71736a; }
+      .red { fill: #b4483c; }
+      .green { fill: #427458; }
+      .gold { fill: #996e25; }
+      .bold { font-weight: 700; }
+      .small { font-size: 18px; }
+      .body { font-size: 21px; }
+    </style>
+
+    <marker id="arrow" viewBox="0 0 12 12"
+            refX="10" refY="6" markerWidth="9" markerHeight="9"
+            orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10"
+            fill="none" stroke="#343632" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <g id="wallet" class="ink">
+      <path d="M5 20 Q2 8 16 8 L73 8 L78 20
+               M5 20 L82 20 Q88 20 88 28 L88 69
+               Q88 77 80 77 L12 77 Q4 77 4 69 Z"/>
+      <path d="M66 39 L90 39 L90 60 L66 60 Q57 50 66 39"/>
+      <circle cx="72" cy="50" r="2.5" fill="#343632"/>
+      <path d="M16 8 L65 -2 L73 8"/>
+    </g>
+
+    <g id="lock" class="ink">
+      <path d="M12 30 L12 19 C12 -3 44 -3 44 19 L44 30"/>
+      <path d="M6 30 Q4 28 4 35 L4 61 Q4 66 10 66
+               L47 66 Q53 66 53 60 L53 35 Q53 29 47 30 Z"/>
+      <circle cx="28" cy="45" r="4"/>
+      <path d="M28 49 L28 56"/>
+    </g>
+
+    <g id="coin" class="ink">
+      <path d="M22 1 C49 0 52 43 25 47 C-4 49 -7 5 22 1 Z"/>
+      <path d="M23 11 L23 36
+               M31 15 C14 7 10 22 25 24 C40 26 32 40 15 33"/>
+    </g>
+  </defs>
+
+  <rect width="1120" height="1120" fill="#faf8f0"/>
+
+  <path d="M36 34 L52 32 M34 35 L34 51
+           M1068 33 L1084 35 L1083 51
+           M35 1068 L36 1084 L52 1085
+           M1068 1084 L1084 1082 L1085 1068"
+        class="ghost"/>
+
+  <!-- 标题 -->
+  <text x="65" y="85" font-size="43" class="bold">币安黑客事件：钱是怎样转走的？</text>
+  <path d="M68 102 Q411 110 785 102"
+        fill="none" stroke="#d1aa65" stroke-width="5" stroke-linecap="round"/>
+  <text x="66" y="140" class="body muted">2026 年 10 月 29 日 · 时间统一为 UTC · 根据帖子配图绘制</text>
+
+  <g transform="rotate(-2 960 105)">
+    <path d="M864 65 Q950 61 1052 67 L1050 134
+             Q960 139 865 132 Z"
+          fill="#f4e9cf" class="ink"/>
+    <text x="958" y="96" text-anchor="middle" font-size="19" class="gold bold">核心时间窗口</text>
+    <text x="958" y="124" text-anchor="middle" font-size="25" class="bold">约 20 分钟</text>
+  </g>
+
+  <!-- 时间主轴 -->
+  <path d="M145 237 Q537 232 1004 238"
+        class="ink" marker-end="url(#arrow)"/>
+  <path d="M150 242 Q555 238 985 243" class="ghost"/>
+
+  <circle cx="155" cy="237" r="9"
+          fill="#f4e9cf" stroke="#343632" stroke-width="2.8"/>
+  <circle cx="557" cy="236" r="9"
+          fill="#e8ada2" stroke="#343632" stroke-width="2.8"/>
+  <circle cx="966" cy="238" r="9"
+          fill="#e8ada2" stroke="#343632" stroke-width="2.8"/>
+
+  <text x="155" y="204" text-anchor="middle" font-size="25" class="bold">事发前</text>
+  <text x="557" y="204" text-anchor="middle" font-size="29" class="red bold">20:05</text>
+  <text x="966" y="204" text-anchor="middle" font-size="27" class="bold">约 20:25</text>
+
+  <text x="155" y="282" text-anchor="middle" class="body bold">预先准备授权</text>
+  <text x="155" y="313" text-anchor="middle" class="small muted">以太坊上预签 50 份</text>
+
+  <text x="557" y="282" text-anchor="middle" class="body bold">开始跨链转移</text>
+  <text x="557" y="313" text-anchor="middle" class="small muted">10 条链，同一时间窗口</text>
+
+  <text x="966" y="282" text-anchor="middle" class="body bold">大部分资金已转走</text>
+  <text x="966" y="313" text-anchor="middle" class="small muted">多数转移在此窗口完成</text>
+
+  <!-- 币安热钱包 -->
+  <path d="M69 359 Q202 355 356 361 L359 601
+           Q220 607 66 601 Z"
+        fill="#f4eddb" class="ink"/>
+  <path d="M74 364 L351 367 L353 596" class="ghost"/>
+
+  <use href="#wallet" transform="translate(166 387) scale(1.08)"/>
+  <text x="211" y="509" text-anchor="middle" font-size="28" class="bold">币安热钱包</text>
+  <text x="211" y="548" text-anchor="middle" class="body">签名权限遭滥用</text>
+  <text x="211" y="579" text-anchor="middle" class="small muted">资金从多个网络同时流出</text>
+
+  <!-- 十条链 -->
+  <text x="560" y="404" text-anchor="middle" font-size="24" class="bold">跨 10 条链</text>
+
+  <path d="M385 483 Q430 475 461 481
+           M661 482 Q695 475 734 482"
+        class="ink" marker-end="url(#arrow)"/>
+
+  <g fill="#faf8f0" stroke="#777b70" stroke-width="2.1">
+    <circle cx="483" cy="459" r="10"/>
+    <circle cx="522" cy="459" r="10"/>
+    <circle cx="561" cy="459" r="10"/>
+    <circle cx="600" cy="459" r="10"/>
+    <circle cx="639" cy="459" r="10"/>
+    <circle cx="483" cy="501" r="10"/>
+    <circle cx="522" cy="501" r="10"/>
+    <circle cx="561" cy="501" r="10"/>
+    <circle cx="600" cy="501" r="10"/>
+    <circle cx="639" cy="501" r="10"/>
+  </g>
+
+  <path d="M493 459 L512 459 M532 459 L551 459
+           M571 459 L590 459 M610 459 L629 459
+           M493 501 L512 501 M532 501 L551 501
+           M571 501 L590 501 M610 501 L629 501
+           M483 469 L483 491 M639 469 L639 491"
+        class="ghost"/>
+
+  <text x="560" y="550" text-anchor="middle" class="small muted">以太坊：授权委托</text>
+  <text x="560" y="578" text-anchor="middle" class="small muted">其余 9 链：签名转账</text>
+
+  <!-- 转移总额 -->
+  <path d="M766 360 Q909 355 1052 360 L1055 602
+           Q904 607 763 601 Z"
+        fill="#f7e2dc" class="ink"/>
+  <path d="M770 366 L1047 365 L1048 597" class="ghost"/>
+
+  <text x="909" y="404" text-anchor="middle" font-size="23" class="bold">流入攻击者钱包</text>
+  <text x="909" y="483" text-anchor="middle" font-size="60" class="red bold">约 63.6 亿</text>
+  <path d="M804 499 Q909 506 1012 498"
+        fill="none" stroke="#c77566" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="909" y="535" text-anchor="middle" font-size="26" class="red bold">美元 · 转移总额</text>
+  <text x="909" y="578" text-anchor="middle" class="small muted">大部分转移集中在约 20 分钟内</text>
+
+  <!-- 冻结与资产转换 -->
+  <text x="68" y="665" font-size="26" class="bold">接下来：冻结与转换，争分夺秒</text>
+
+  <path d="M909 612 Q911 647 909 688
+           L294 688 L294 715
+           M909 688 L829 688 L829 715"
+        class="ink" marker-end="url(#arrow)"/>
+  <circle cx="909" cy="688" r="4" fill="#343632"/>
+
+  <path d="M68 724 Q292 718 518 724 L520 963
+           Q292 969 65 963 Z"
+        fill="#e8efe3" class="ink"/>
+  <path d="M74 730 L511 729 L514 957" class="ghost"/>
+
+  <use href="#lock" transform="translate(93 746) scale(.75)"/>
+  <text x="151" y="783" font-size="26" class="green bold">冻结拦截</text>
+  <text x="98" y="858" font-size="56" class="green bold">约 27 亿美元</text>
+  <text x="98" y="901" class="body">发行方冻结稳定币</text>
+  <text x="98" y="933" class="small muted">另有 Arbitrum 安全委员会冻结资产</text>
+
+  <path d="M438 765 L452 780 L481 751"
+        fill="none" stroke="#427458" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M605 724 Q830 719 1052 725 L1055 963
+           Q831 968 602 962 Z"
+        fill="#f5edda" class="ink"/>
+  <path d="M611 730 L1047 731 L1049 957" class="ghost"/>
+
+  <use href="#coin" transform="translate(631 750) scale(.83)"/>
+  <text x="689" y="783" font-size="26" class="gold bold">转换、持有 ETH / BTC</text>
+  <text x="635" y="858" font-size="56" class="gold bold">约 24 亿美元</text>
+  <text x="635" y="901" class="body">逾 42 万 ETH ＋ 18,270 BTC</text>
+  <text x="635" y="933" class="small muted">这些资产不受发行方直接冻结</text>
+
+  <!-- 帖子披露 -->
+  <path d="M69 1000 Q554 994 1051 1000 L1050 1083
+           Q558 1088 67 1082 Z"
+        fill="#f0eee6" class="ink"/>
+
+  <text x="90" y="1032" class="body bold">10 月 30 日 · 帖子披露</text>
+  <text x="369" y="1032" class="small">币安确认安全事件，并暂停部分网络提现。</text>
+  <text x="90" y="1066" class="small muted">配图中的 TRM 判断：热钱包签名基础设施失陷；攻击归因于朝鲜 TraderTraitor。</text>
+</svg>
